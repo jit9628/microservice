@@ -1,0 +1,974 @@
+2023-12-07 09:53:12 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 21852 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 09:53:12 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 09:53:12 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 09:53:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-07 09:53:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 JDBC repository interfaces.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 09:53:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 14 JPA repository interfaces.
+2023-12-07 09:53:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 09:53:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 09:53:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 09:53:14 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 09:53:14 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 09:53:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1335 ms
+2023-12-07 09:53:14 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 09:53:14 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-07 09:53:14 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-07 09:53:16 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 09:53:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 09:53:33 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 09:53:34 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 09:53:34 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 09:53:34 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 09:53:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75521f4c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@496cd216, org.springframework.security.web.context.SecurityContextPersistenceFilter@54e8b458, org.springframework.security.web.header.HeaderWriterFilter@14d4fc2e, org.springframework.web.filter.CorsFilter@7a184618, org.springframework.security.web.authentication.logout.LogoutFilter@46eae690, com.ecommarce.api.security.jwt.AuthTokenFilter@369f6da6, com.ecommarce.api.security.jwt.AuthTokenFilter@369f6da6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79c4706d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ab9f6b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c2df3d1, org.springframework.security.web.session.SessionManagementFilter@47f096a1, org.springframework.security.web.access.ExceptionTranslationFilter@443350d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b272a00]
+2023-12-07 09:53:35 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 09:53:35 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 09:53:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 09:53:35 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 22.552 seconds (JVM running for 23.017)
+2023-12-07 09:53:45 [http-nio-8000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-07 09:53:45 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-07 09:53:45 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-12-07 09:53:45 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:45 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:45 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:45 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:45 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:45 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:45 [http-nio-8000-exec-2] WARN  c.e.api.controller.PageController - Exceptions All Products Is StatementCallback; uncategorized SQLException for SQL [SELECT DATE_ADD(CURDATE() , INTERVAL 5 DAY);]; SQL state [S0010]; error code [195]; 'CURDATE' is not a recognized built-in function name.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: 'CURDATE' is not a recognized built-in function name.
+2023-12-07 09:53:46 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:46 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:46 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:46 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-6] INFO  c.e.api.controller.PageController - parameter value is ::null
+2023-12-07 09:53:49 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:53:49 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:53:49 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:53:49 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:21 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:21 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :null
+2023-12-07 09:54:21 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:21 [http-nio-8000-exec-6] INFO  c.e.api.controller.AuthController - user is exists  :: Optional[User(id=1, firstname=vedakshi, lastname=Jadaun, username=H433HS, email=vedakshi@gmail.com, password=$2a$10$CjEbLxRECFLd3Vk5.tXrKOqLLSN4/0g1zvo/COdFc6tGOcuJOO2IS, mobile=0123654789, roles=[Role(id=1, name=ROLE_ADMIN)], orders=null, token=null, tokancreationdate=null, otpverifier=null)]
+2023-12-07 09:54:21 [http-nio-8000-exec-6] INFO  c.e.api.controller.AuthController - user authentication is :: true
+2023-12-07 09:54:21 [http-nio-8000-exec-6] INFO  c.e.api.controller.AuthController - user userDetails is :: 1
+2023-12-07 09:54:21 [http-nio-8000-exec-6] INFO  c.e.api.controller.AuthController - Roles of Zero Position ROLE_ADMIN
+2023-12-07 09:54:21 [http-nio-8000-exec-6] INFO  c.e.api.controller.AuthController - Roles is [ROLE_ADMIN]
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.api.CheckAuthenticateUser - Empty Context  is ::SecurityContextImpl [Null authentication]
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.api.CheckAuthenticateUser - After Set Authentication ::UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.api.CheckAuthenticateUser - Authenticate user1 is ::com.ecommarce.api.service.UserDetailsImpl@5e0f70a1
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.api.CheckAuthenticateUser - Authenticate user2 is ::com.ecommarce.api.service.UserDetailsImpl@5e0f70a1
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.controller.AuthController - ADMIN Proccess
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.CheckAuthenticateUser - Security context Holder is :>SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2023-12-07 09:54:22 [http-nio-8000-exec-1] DEBUG c.e.api.CheckAuthenticateUser - Check Authority Is :: true
+2023-12-07 09:54:22 [http-nio-8000-exec-1] DEBUG c.e.api.CheckAuthenticateUser -  CheckAuthority Value Is 1
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.controller.AuthController - Get Authority Value Is ::false
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:54:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:54:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:54:22 [http-nio-8000-exec-9] INFO  c.e.a.serviceimpl.ProductServiceImpl - total products 0
+2023-12-07 09:55:26 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:55:26 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@5e0f70a1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:55:26 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:55:26 [http-nio-8000-exec-10] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 09:56:13 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-07 09:56:13 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 09:56:13 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-07 09:56:13 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 09:56:13 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 21852 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 09:56:13 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 09:56:13 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 14 JPA repository interfaces.
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 09:56:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 09:56:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 09:56:14 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 09:56:14 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 09:56:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 405 ms
+2023-12-07 09:56:14 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 09:56:14 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 09:56:22 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 12012 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 09:56:22 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 09:56:22 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 09:56:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-07 09:56:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 JDBC repository interfaces.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 14 JPA repository interfaces.
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 09:56:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 09:56:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 09:56:23 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 09:56:23 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 09:56:23 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1220 ms
+2023-12-07 09:56:24 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 09:56:24 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-12-07 09:56:24 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-07 09:56:24 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 09:56:25 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 09:56:25 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 09:56:25 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 09:56:25 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 09:56:26 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 09:56:26 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7196ef30, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2378049c, org.springframework.security.web.context.SecurityContextPersistenceFilter@63fb2386, org.springframework.security.web.header.HeaderWriterFilter@11c7b025, org.springframework.web.filter.CorsFilter@2c851299, org.springframework.security.web.authentication.logout.LogoutFilter@29440b1, com.ecommarce.api.security.jwt.AuthTokenFilter@6bae6657, com.ecommarce.api.security.jwt.AuthTokenFilter@6bae6657, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ebe7078, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c2e3130, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@391b806e, org.springframework.security.web.session.SessionManagementFilter@30df0a72, org.springframework.security.web.access.ExceptionTranslationFilter@23f6188f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4541d52b]
+2023-12-07 09:56:26 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 09:56:26 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 09:56:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 09:56:26 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 4.109 seconds (JVM running for 4.623)
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  c.e.api.CheckAuthenticateUser - Security context Holder is :>SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2023-12-07 09:58:12 [http-nio-8000-exec-2] DEBUG c.e.api.CheckAuthenticateUser - Check Authority Is :: true
+2023-12-07 09:58:12 [http-nio-8000-exec-2] DEBUG c.e.api.CheckAuthenticateUser -  CheckAuthority Value Is 1
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  c.e.api.controller.AuthController - Get Authority Value Is ::false
+2023-12-07 09:58:12 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-1] INFO  c.e.api.controller.PageController - parameter value is ::null
+2023-12-07 09:58:12 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:12 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:12 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:12 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:21 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:21 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@79a82fd9, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:21 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.controller.AuthController - user is exists  :: Optional[User(id=1, firstname=vedakshi, lastname=Jadaun, username=H433HS, email=vedakshi@gmail.com, password=$2a$10$CjEbLxRECFLd3Vk5.tXrKOqLLSN4/0g1zvo/COdFc6tGOcuJOO2IS, mobile=0123654789, roles=[Role(id=1, name=ROLE_ADMIN)], orders=null, token=null, tokancreationdate=null, otpverifier=null)]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.controller.AuthController - user authentication is :: true
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.controller.AuthController - user userDetails is :: 1
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.controller.AuthController - Roles of Zero Position ROLE_ADMIN
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.controller.AuthController - Roles is [ROLE_ADMIN]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.api.CheckAuthenticateUser - Empty Context  is ::SecurityContextImpl [Null authentication]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.api.CheckAuthenticateUser - After Set Authentication ::UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.api.CheckAuthenticateUser - Authenticate user1 is ::com.ecommarce.api.service.UserDetailsImpl@1be70b7b
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.api.CheckAuthenticateUser - Authenticate user2 is ::com.ecommarce.api.service.UserDetailsImpl@1be70b7b
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.controller.AuthController - ADMIN Proccess
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.CheckAuthenticateUser - Security context Holder is :>SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2023-12-07 09:58:22 [http-nio-8000-exec-6] DEBUG c.e.api.CheckAuthenticateUser - Check Authority Is :: true
+2023-12-07 09:58:22 [http-nio-8000-exec-6] DEBUG c.e.api.CheckAuthenticateUser -  CheckAuthority Value Is 1
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.controller.AuthController - Get Authority Value Is ::false
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-10] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-10] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-9] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-9] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-5] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-5] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-3] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-3] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:22 [http-nio-8000-exec-8] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:22 [http-nio-8000-exec-8] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:30 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:30 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:30 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:43 [http-nio-8000-exec-2] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 09:58:43 [http-nio-8000-exec-8] INFO  c.e.a.serviceimpl.ProductServiceImpl - total products 0
+2023-12-07 09:58:43 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 09:58:43 [http-nio-8000-exec-7] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@1be70b7b, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 09:58:43 [http-nio-8000-exec-7] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 09:58:43 [http-nio-8000-exec-7] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 10:00:12 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-07 10:00:12 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 10:00:12 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-07 10:00:12 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:00:12 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 12012 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 10:00:12 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 10:00:12 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 JDBC repository interfaces.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 14 JPA repository interfaces.
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 10:00:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 10:00:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 10:00:12 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 10:00:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 10:00:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 370 ms
+2023-12-07 10:00:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 10:00:12 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 10:00:13 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 10:00:13 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:00:13 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 10:00:13 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 10:00:13 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 10:00:13 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2112a1a0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75a60c5d, org.springframework.security.web.context.SecurityContextPersistenceFilter@47d29ee0, org.springframework.security.web.header.HeaderWriterFilter@17883df1, org.springframework.web.filter.CorsFilter@7db08f25, org.springframework.security.web.authentication.logout.LogoutFilter@5c6970cb, com.ecommarce.api.security.jwt.AuthTokenFilter@481fc5a6, com.ecommarce.api.security.jwt.AuthTokenFilter@481fc5a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cee3959, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6adffc80, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15c10fb0, org.springframework.security.web.session.SessionManagementFilter@6d911683, org.springframework.security.web.access.ExceptionTranslationFilter@6a4220bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9ec3eb5]
+2023-12-07 10:00:13 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 10:00:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 10:00:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 10:00:13 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 1.497 seconds (JVM running for 231.842)
+2023-12-07 10:00:13 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-12-07 10:00:26 [http-nio-8000-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-07 10:00:26 [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-07 10:00:26 [http-nio-8000-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-12-07 10:00:26 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 10:00:26 [http-nio-8000-exec-2] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@11a1029, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 10:00:26 [http-nio-8000-exec-2] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 10:00:26 [http-nio-8000-exec-2] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 10:00:54 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-07 10:00:54 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 10:00:54 [Thread-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-07 10:00:54 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:00:54 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 12012 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 10:00:54 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 10:00:54 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 14 JPA repository interfaces.
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 10:00:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 10:00:54 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 10:00:54 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 10:00:54 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 10:00:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 387 ms
+2023-12-07 10:00:54 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 10:00:54 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 10:00:55 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 10:00:55 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:00:55 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 10:00:55 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 10:00:55 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 10:00:55 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2dbb3966, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@316428a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@29ae153a, org.springframework.security.web.header.HeaderWriterFilter@7e7e90cf, org.springframework.web.filter.CorsFilter@69565844, org.springframework.security.web.authentication.logout.LogoutFilter@4031f6cd, com.ecommarce.api.security.jwt.AuthTokenFilter@5c4decbb, com.ecommarce.api.security.jwt.AuthTokenFilter@5c4decbb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d714d6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@570346e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18efe814, org.springframework.security.web.session.SessionManagementFilter@2c2c51d3, org.springframework.security.web.access.ExceptionTranslationFilter@2adbde15, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55248d8f]
+2023-12-07 10:00:55 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 10:00:55 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 10:00:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 10:00:55 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 1.672 seconds (JVM running for 273.997)
+2023-12-07 10:00:55 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-12-07 10:01:31 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-07 10:01:31 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 10:01:31 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:01:31 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 12012 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 10:01:31 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 10:01:31 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 14 JPA repository interfaces.
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 10:01:31 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 10:01:31 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 10:01:31 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 10:01:31 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 10:01:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 329 ms
+2023-12-07 10:01:31 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 10:01:31 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 10:01:32 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 10:01:32 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:01:32 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 10:01:32 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 10:01:32 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 10:01:32 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@9d72df2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16e63323, org.springframework.security.web.context.SecurityContextPersistenceFilter@33aad12, org.springframework.security.web.header.HeaderWriterFilter@7784a70d, org.springframework.web.filter.CorsFilter@3264f2b, org.springframework.security.web.authentication.logout.LogoutFilter@335b0cf, com.ecommarce.api.security.jwt.AuthTokenFilter@184363dc, com.ecommarce.api.security.jwt.AuthTokenFilter@184363dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13d74196, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4139202e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66840bb0, org.springframework.security.web.session.SessionManagementFilter@181181ae, org.springframework.security.web.access.ExceptionTranslationFilter@20760172, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25cf36c]
+2023-12-07 10:01:32 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 10:01:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 10:01:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 10:01:32 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 1.419 seconds (JVM running for 310.797)
+2023-12-07 10:01:32 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-12-07 10:04:43 [http-nio-8000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-07 10:04:43 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-07 10:04:43 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-07 10:04:43 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 10:04:43 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@34186a29, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 10:04:43 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 10:04:58 [http-nio-8000-exec-1] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 10:07:54 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-07 10:07:54 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 10:07:54 [Thread-15] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-07 10:07:54 [Thread-15] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:07:54 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 12012 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 10:07:54 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 10:07:54 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 14 JPA repository interfaces.
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 10:07:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 10:07:54 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 10:07:54 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 10:07:54 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 10:07:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 308 ms
+2023-12-07 10:07:54 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 10:08:13 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 10:08:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 10:08:33 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:08:33 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 10:08:33 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 10:08:33 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 10:08:33 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66b2eb96, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@506f8d8c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d076b38, org.springframework.security.web.header.HeaderWriterFilter@20669541, org.springframework.web.filter.CorsFilter@18f2bf3e, org.springframework.security.web.authentication.logout.LogoutFilter@47315d91, com.ecommarce.api.security.jwt.AuthTokenFilter@3445875e, com.ecommarce.api.security.jwt.AuthTokenFilter@3445875e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2480e72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16104fe7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@273eb25d, org.springframework.security.web.session.SessionManagementFilter@53708bc9, org.springframework.security.web.access.ExceptionTranslationFilter@25635278, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@649b7d00]
+2023-12-07 10:08:34 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 10:08:34 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 10:08:34 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 10:08:34 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 39.542 seconds (JVM running for 732.154)
+2023-12-07 10:08:34 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-12-07 10:08:35 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-07 10:08:35 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 10:08:35 [Thread-19] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:08:35 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 12012 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 10:08:35 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 10:08:35 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 14 JPA repository interfaces.
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 10:08:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 10:08:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 10:08:35 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 10:08:35 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 10:08:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 299 ms
+2023-12-07 10:08:35 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 10:08:35 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 10:10:18 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 10:10:18 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:10:18 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 10:10:18 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 10:10:18 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 10:10:18 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7200fd62, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6398395f, org.springframework.security.web.context.SecurityContextPersistenceFilter@11eebac7, org.springframework.security.web.header.HeaderWriterFilter@2a38f2f2, org.springframework.web.filter.CorsFilter@172fbeed, org.springframework.security.web.authentication.logout.LogoutFilter@103d197a, com.ecommarce.api.security.jwt.AuthTokenFilter@3fd9f3fc, com.ecommarce.api.security.jwt.AuthTokenFilter@3fd9f3fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4839df72, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25fb0be5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f1711b7, org.springframework.security.web.session.SessionManagementFilter@6a077980, org.springframework.security.web.access.ExceptionTranslationFilter@72057171, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d78ad02]
+2023-12-07 10:10:19 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 10:10:19 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 10:10:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 10:10:19 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 103.517 seconds (JVM running for 837.157)
+2023-12-07 10:10:19 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-12-07 10:11:59 [http-nio-8000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-07 10:11:59 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-07 10:11:59 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-12-07 10:11:59 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 10:11:59 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@256abc86, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 10:11:59 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 10:12:01 [http-nio-8000-exec-1] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 10:22:09 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-07 10:22:09 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 10:22:09 [Thread-23] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-07 10:22:09 [Thread-23] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:22:09 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Starting EcommarceApiApplication using Java 17.0.8.1 on DESKTOP-P5PQ5EQ with PID 12012 (C:\Users\Precise\Documents\vedya\EcommarceApi\target\classes started by Precise in C:\Users\Precise\Documents\vedya\EcommarceApi)
+2023-12-07 10:22:09 [restartedMain] DEBUG c.e.api.EcommarceApiApplication - Running with Spring Boot v2.7.11, Spring v5.3.27
+2023-12-07 10:22:09 [restartedMain] INFO  c.e.api.EcommarceApiApplication - The following 1 profile is active: "PROD"
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AddToCartRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.AdderessRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.BookingProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CategoryRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.CityRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ContactUsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.OrderRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.ProductRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.SizeMasterTableRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.StateRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UploadRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserImageFileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ecommarce.api.repo.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 14 JPA repository interfaces.
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+2023-12-07 10:22:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-07 10:22:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-12-07 10:22:09 [restartedMain] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-12-07 10:22:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-07 10:22:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 327 ms
+2023-12-07 10:22:09 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-07 10:22:09 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+2023-12-07 10:22:10 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-07 10:22:10 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-07 10:22:10 [restartedMain] DEBUG c.e.api.security.jwt.AuthTokenFilter - Filter 'authenticationJwtTokenFilter' configured for use
+2023-12-07 10:22:10 [restartedMain] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static javax.validation.Payload com.ecommarce.api.utility.RandomStringValue.payload
+2023-12-07 10:22:10 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-12-07 10:22:10 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25a829f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16ef8dd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f89a7ea, org.springframework.security.web.header.HeaderWriterFilter@34dcae0a, org.springframework.web.filter.CorsFilter@7ecdc119, org.springframework.security.web.authentication.logout.LogoutFilter@2fe9fbb2, com.ecommarce.api.security.jwt.AuthTokenFilter@3c0eb3dc, com.ecommarce.api.security.jwt.AuthTokenFilter@3c0eb3dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7871baa7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@290ce75d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7139a823, org.springframework.security.web.session.SessionManagementFilter@10368c70, org.springframework.security.web.access.ExceptionTranslationFilter@38d5e743, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@810fd6e]
+2023-12-07 10:22:10 [restartedMain] WARN  o.s.data.convert.CustomConversions - Registering converter from class microsoft.sql.DateTimeOffset to class java.time.OffsetDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation
+2023-12-07 10:22:10 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-07 10:22:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+2023-12-07 10:22:10 [restartedMain] INFO  c.e.api.EcommarceApiApplication - Started EcommarceApiApplication in 1.347 seconds (JVM running for 1548.931)
+2023-12-07 10:22:10 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-12-07 10:22:21 [http-nio-8000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-07 10:22:21 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-12-07 10:22:21 [http-nio-8000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-12-07 10:22:21 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 10:22:21 [http-nio-8000-exec-1] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@54c1bad8, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 10:22:21 [http-nio-8000-exec-1] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 10:22:21 [http-nio-8000-exec-1] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 10:23:21 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 10:23:21 [http-nio-8000-exec-4] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@54c1bad8, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 10:23:21 [http-nio-8000-exec-4] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 10:23:21 [http-nio-8000-exec-4] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 10:45:14 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - parsing jwt  :: null
+2023-12-07 10:45:14 [http-nio-8000-exec-6] INFO  c.e.api.security.jwt.AuthTokenFilter - Filter Authentication is :UsernamePasswordAuthenticationToken [Principal=com.ecommarce.api.service.UserDetailsImpl@54c1bad8, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]
+2023-12-07 10:45:14 [http-nio-8000-exec-6] DEBUG c.e.a.s.jwt.CacheControlFilter - Cache Controll execute..
+2023-12-07 10:45:14 [http-nio-8000-exec-6] INFO  c.e.api.controller.AdminController - {Deatails Are Booking .. } :[]
+2023-12-07 10:45:21 [RMI TCP Connection(53)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-12-07 10:45:21 [RMI TCP Connection(53)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-12-07 10:45:21 [RMI TCP Connection(53)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-07 10:45:21 [RMI TCP Connection(53)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
