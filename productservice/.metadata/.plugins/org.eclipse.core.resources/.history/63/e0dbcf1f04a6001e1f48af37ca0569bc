@@ -1,0 +1,14 @@
+package com.category.categoryservice.serviceimplementation;
+
+import com.category.categoryservice.entity.Category;
+import com.category.categoryservice.service.CategoryService;
+
+public class CategoryServiceImplementation implements CategoryService {
+
+	@Override
+	public String addCategory(Category category) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

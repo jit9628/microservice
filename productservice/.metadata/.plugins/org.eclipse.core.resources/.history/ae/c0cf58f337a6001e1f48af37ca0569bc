@@ -1,0 +1,5 @@
+package com.category.categoryservice.config;
+
+public class ConfigureRestTemplate {
+
+}

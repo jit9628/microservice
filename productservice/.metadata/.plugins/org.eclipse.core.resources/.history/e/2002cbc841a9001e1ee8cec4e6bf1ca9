@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: GATEWAY-SERVICE
+
+  cloud:
+    gateway:
+      routes:
+        - id: PRODUCT
+          uri: lb://PRODUCT/
+          predicates:
+            - Path=/api/product/**
+#        - id: DEPARTMENT-SERVICE
+#          uri: lb://DEPARTMENT-SERVICE
+#          predicates:
+#            - Path=/departments/**
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+  instance:
+    hostname: localhost
+
+server:
+  port: 9090

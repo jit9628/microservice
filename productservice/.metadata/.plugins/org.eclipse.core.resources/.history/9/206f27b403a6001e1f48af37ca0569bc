@@ -1,0 +1,5 @@
+package com.category.categoryservice.service;
+
+public interface CategoryService {
+
+}

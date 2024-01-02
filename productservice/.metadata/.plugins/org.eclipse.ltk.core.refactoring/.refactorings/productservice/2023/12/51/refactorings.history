@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ModelMapperConfig.java&apos; to &apos;userservice/src/main/java/com.users.userservice.config&apos;&#x0D;&#x0A;- Original project: &apos;productservice&apos;&#x0D;&#x0A;- Destination element: &apos;userservice/src/main/java/com.users.userservice.config&apos;&#x0D;&#x0A;- Original element: &apos;com.product.productservice.config.ModelMapperConfig.java&apos;" description="Copy compilation unit" destination="=userservice/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.users.userservice.config" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.product.productservice.config{ModelMapperConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1703053790488" units="1" version="1.0"/>
+</session>

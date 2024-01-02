@@ -1,0 +1,47 @@
+package com.users.userservice.serviceimpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.users.userservice.entity.UserLogin;
+import com.users.userservice.repository.UserRepo;
+import com.users.userservice.service.UserService;
+import com.users.userservice.util.PasswordEncoder;
+
+@Service
+public class UserServiceImpl implements UserService {
+    //private UserRepository userRepository;
+    private UserRepo userRepo;
+    
+    @Autowired
+    public void setUserRepository(UserRepo userRepo) {
+              this.userRepo =userRepo;
+    }
+
+    @Override
+    public int register(UserLogin userLogin) {
+System.out.println("User Service Executed ... ");
+        userLogin.setPassword(PasswordEncoder.hashPassword(userLogin.getPassword()));
+         this.userRepo.save(userLogin);
+         return 1;
+       // return userRepository.register(userLogin);
+        
+    }
+
+    @Override
+    public UserLogin findByUserName(String username) {
+       // return userRepository.findByUserName(username);
+    	return this.userRepo.findByUsername(username);
+    
+    	
+    }
+
+    @Override
+    public List<UserLogin> findAll() {
+
+     //   return userRepository.findAll();
+    	return null;
+    }
+}

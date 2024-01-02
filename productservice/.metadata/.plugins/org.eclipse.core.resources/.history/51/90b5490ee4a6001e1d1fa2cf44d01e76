@@ -1,0 +1,74 @@
+# eureka:
+#     client:
+#         fetch-registry: true
+#         register-with-eureka: true
+#         serviceUrl:
+#             defaultZone: http://localhost:8761/eureka/
+#     instance:
+#         prefer-ip-address: true
+server:
+    port: 8090
+spring:
+    application:
+        name: ApiGateway-Service
+        #this configguration property is middle level 
+#    cloud:
+#        config:
+#            server:
+#                git:
+#                    uri: https://github.com/jit9628/microservices-configuration-server.git
+#        gateway:
+#            routes:
+#            
+#            - id: Product-Service
+#              uri: lb://Product-Service
+#              predicates:
+#              - Path: /api/product/**
+#    cloud:
+#      gateway:
+#        routes:
+#           - id: Product-Service
+#             uri: lb://Product-Service
+#             predicates:
+#               - Path=/api/product/**
+#          - id: second-microservice
+#          uri: http://localhost:8082/
+#          predicates:
+#            - Path=/second/**
+
+#    cloud:
+#     gateway:
+#      mvc:
+#       routes:
+#        - id: Product-Service
+#          uri: lb://Product-Service
+#          predicates:
+#            - path: /api/product/**
+cloud:
+    gateway:
+      routes:
+        - id: USER-SERVICE
+          uri: lb://Product-Service
+          predicates:
+            - Path=/api/product/**
+       
+
+
+#      gateway:
+#        mvc:
+#         routes:
+#          - id: Product-Service
+#            uri: lb://Product-Service
+#            predicates: 
+#            - Path: /api/product/**
+##          - id: Product-Service
+##            url: lb://Product-Service
+##            predicates: 
+##            - Path: /api/product/**
+
+
+
+
+
+
+

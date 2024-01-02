@@ -1,0 +1,6 @@
+public class Data{
+    public int pid;
+    public String productname;
+    public int quantity;
+    public Date createddate;
+}

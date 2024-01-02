@@ -1,0 +1,8 @@
+package com.category.categoryservice.service;
+
+import com.category.categoryservice.entity.Category;
+
+public interface CategoryService {
+	public String addCategory(Category category);
+
+}

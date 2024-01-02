@@ -1,0 +1,5 @@
+package com.order.orderservice.pojo;
+public class Root{
+    public Data data;
+    public String message;
+}

@@ -1,0 +1,13 @@
+package com.webs.frontend.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class TestController {
+
+	public String getPage() {
+		return "index";
+	}
+	
+
+}

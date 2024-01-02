@@ -1,0 +1,5 @@
+package com.category.categoryservice.entity;
+
+public class Category {
+
+}
